@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -338,10 +339,19 @@
             </div>
           </div>
 
-          <form class="contact-form" id="contactForm">
-            <input type="text" placeholder="Your name" />
-            <input type="text" placeholder="Phone or email" />
-            <textarea placeholder="Tell us what you want to promote"></textarea>
+          <form 
+            class="contact-form" 
+            id="contactForm"
+            action="https://formsubmit.co/adflymediaadvertising@gmail.com"
+            method="POST"
+          >
+            <input type="text" name="name" placeholder="Your name" required />
+            <input type="text" name="contact" placeholder="Email or mobile number" required />
+            <textarea name="message" placeholder="Tell us what you want to promote" required></textarea>
+
+            <input type="hidden" name="_subject" value="New Enquiry - ADFLYMEDIA">
+            <input type="hidden" name="_captcha" value="false">
+
             <button type="submit">Send Enquiry</button>
           </form>
         </div>
